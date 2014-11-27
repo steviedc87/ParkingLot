@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B0081BD41A01163E002C432C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0081BD31A01163E002C432C /* AppDelegate.swift */; };
-		B0081BD61A01163E002C432C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0081BD51A01163E002C432C /* ViewController.swift */; };
 		B0081BD91A01163E002C432C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0081BD71A01163E002C432C /* Main.storyboard */; };
 		B0081BDB1A01163E002C432C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0081BDA1A01163E002C432C /* Images.xcassets */; };
 		B0081BDE1A01163E002C432C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0081BDC1A01163E002C432C /* LaunchScreen.xib */; };
 		B0081BEA1A01163E002C432C /* ParkingLotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0081BE91A01163E002C432C /* ParkingLotTests.swift */; };
+		B0081BF41A011684002C432C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0081BF31A011684002C432C /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B0081BF61A011771002C432C /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0081BF51A011771002C432C /* ParkingLot.swift */; };
+		B0081BF81A0118FE002C432C /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0081BF71A0118FE002C432C /* Json.swift */; };
+		B0081BFA1A011D5A002C432C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0081BF91A011D5A002C432C /* Service.swift */; };
+		B0081BFC1A012638002C432C /* ParkingLotsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0081BFB1A012638002C432C /* ParkingLotsController.swift */; };
+		B0081BFE1A01372B002C432C /* ParkingLotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0081BFD1A01372B002C432C /* ParkingLotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +34,18 @@
 		B0081BCE1A01163E002C432C /* ParkingLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0081BD21A01163E002C432C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0081BD31A01163E002C432C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0081BD51A01163E002C432C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0081BD81A01163E002C432C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0081BDA1A01163E002C432C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B0081BDD1A01163E002C432C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B0081BE31A01163E002C432C /* ParkingLotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingLotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0081BE81A01163E002C432C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0081BE91A01163E002C432C /* ParkingLotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotTests.swift; sourceTree = "<group>"; };
+		B0081BF31A011684002C432C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B0081BF51A011771002C432C /* ParkingLot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
+		B0081BF71A0118FE002C432C /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		B0081BF91A011D5A002C432C /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B0081BFB1A012638002C432C /* ParkingLotsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotsController.swift; sourceTree = "<group>"; };
+		B0081BFD1A01372B002C432C /* ParkingLotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0081BF41A011684002C432C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +70,7 @@
 		B0081BC51A01163E002C432C = {
 			isa = PBXGroup;
 			children = (
+				B0081BF31A011684002C432C /* MapKit.framework */,
 				B0081BD01A01163E002C432C /* ParkingLot */,
 				B0081BE61A01163E002C432C /* ParkingLotTests */,
 				B0081BCF1A01163E002C432C /* Products */,
@@ -78,11 +90,15 @@
 			isa = PBXGroup;
 			children = (
 				B0081BD31A01163E002C432C /* AppDelegate.swift */,
-				B0081BD51A01163E002C432C /* ViewController.swift */,
 				B0081BD71A01163E002C432C /* Main.storyboard */,
+				B0081BFD1A01372B002C432C /* ParkingLotViewController.swift */,
 				B0081BDA1A01163E002C432C /* Images.xcassets */,
 				B0081BDC1A01163E002C432C /* LaunchScreen.xib */,
 				B0081BD11A01163E002C432C /* Supporting Files */,
+				B0081BF51A011771002C432C /* ParkingLot.swift */,
+				B0081BF71A0118FE002C432C /* Json.swift */,
+				B0081BF91A011D5A002C432C /* Service.swift */,
+				B0081BFB1A012638002C432C /* ParkingLotsController.swift */,
 			);
 			path = ParkingLot;
 			sourceTree = "<group>";
@@ -161,6 +177,7 @@
 				TargetAttributes = {
 					B0081BCD1A01163E002C432C = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = V7X23DEZ3E;
 					};
 					B0081BE21A01163E002C432C = {
 						CreatedOnToolsVersion = 6.1;
@@ -212,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0081BD61A01163E002C432C /* ViewController.swift in Sources */,
+				B0081BF61A011771002C432C /* ParkingLot.swift in Sources */,
+				B0081BFE1A01372B002C432C /* ParkingLotViewController.swift in Sources */,
+				B0081BFA1A011D5A002C432C /* Service.swift in Sources */,
 				B0081BD41A01163E002C432C /* AppDelegate.swift in Sources */,
+				B0081BFC1A012638002C432C /* ParkingLotsController.swift in Sources */,
+				B0081BF81A0118FE002C432C /* Json.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +428,7 @@
 				B0081BEF1A01163E002C432C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0081BF01A01163E002C432C /* Build configuration list for PBXNativeTarget "ParkingLotTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +437,7 @@
 				B0081BF21A01163E002C432C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
